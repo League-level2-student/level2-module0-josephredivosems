@@ -42,14 +42,14 @@ public class _02_FindTheHiddenButton implements ActionListener{
 			//7. add the ActionListener to each JButton
 			//8. add each JButton to the panel
 		for (int i = 0; i < buttons.length; i++) {
+			buttons[i] = new JButton();
 			buttons[i].addActionListener(this);
 			panel.add(buttons[i]);
 		}
 		//9 add the panel to the window
 		window.add(panel);
-		window.setVisible(true);
 		//10. call setExtendedState(JFrame.MAXIMIZED_BOTH) on your JFrame object.
-		
+		window.setExtendedState(JFrame.MAXIMIZED_BOTH);
 		//11. set the JFrame to visible.
 		
 		//12. Give the user the instructions for the game.
